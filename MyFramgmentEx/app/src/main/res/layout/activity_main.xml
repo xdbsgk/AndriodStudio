@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- xml 로 fragment 만드는 방법 -->
+
+    <!--
+        name : 어떤 fragment 인지 지정을 해야 한다.
+        id : 반드시 식별자를 지정해 주어야 한다.
+    -->
+    <!--
+    <fragment
+        android:id="@+id/fragmentOne"
+        android:name="com.example.myframgmentex.FragmentOne"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+    -->
+    0
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="프래그먼트 생성" />
+
+    <Button
+        android:id="@+id/button2"
+        android:text="프래그먼트 삭제"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+    <!-- 부모가 될 프래그먼트 만들어주기 (container 개념) -->
+
+    <LinearLayout
+        android:id="@+id/fragContainer"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/purple_200"
+        android:orientation="horizontal" />
+
+
+</LinearLayout>

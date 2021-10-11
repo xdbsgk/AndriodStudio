@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/emptyTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#FFB2CC"
+        android:gravity="center"
+        android:text="Empty"
+        android:textSize="30dp"
+        android:textStyle="italic|bold" />
+
+<!--    <androidx.fragment.app.FragmentContainerView-->
+<!--        android:name="com.example.mycallbackex.FragmentOne"-->
+<!--        android:id="@+id/fragmentOne"-->
+<!--        android:background="#AAB2FF"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_weight="1" />-->
+
+    <LinearLayout
+        android:background="#AAB2FF"
+        android:orientation="vertical"
+        android:id="@+id/fragmentContainer"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/fragmentContainer2"
+        android:layout_weight="1"
+        android:background="#FFEF67"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
