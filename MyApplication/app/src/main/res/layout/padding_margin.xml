@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 마진은 부모 뷰 기준으로 얼마만큼 공간(여백)을 떨어트릴지 결정한다. -->
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="100dp"
+        android:background="@color/purple_200"
+        android:text="안녕하세요." />
+
+    <TextView
+        android:layout_margin="50dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/purple_200"
+        android:text="안녕하세요." />
+
+    <!-- 패딩은 자신의 컨텐츠 크기 기준 얼마만큼 공간(여백)을 떨어트릴지 결정한다.   -->
+    <TextView
+        android:paddingLeft="20dp"
+        android:paddingTop="50dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#E9B2F3"
+        android:text="안녕하세요." />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:padding="30dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#E9B2F3"
+        android:text="안녕하세요." />
+
+
+</LinearLayout>

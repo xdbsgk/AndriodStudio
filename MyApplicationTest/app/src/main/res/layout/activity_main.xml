@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="24dp"
+    android:paddingBottom="24dp"
+    tools:context=".MainActivity">
+
+    <!-- 안드로이드 개발자가 오류를 해결하기 위해 만든 속성 fillViewport -->
+    <!-- scrollbars 속성 : 스크롤바 보이게 할지 결정 -->
+    <!-- 라이브러리 : 프레임워크에 없는 것들을 외부의 도움을 받아 개발할 때 사용하는 것. -->
+    <!-- Gradle : 어떻게 설치할 지 알려줌. -->
+    <!-- GitHub 다운받을 때 라이센스 확인하기 -->
+    <!-- build.gradle 안 모듈에 다운받아 싱크해 사용하기 -->
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto "
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/image_1"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto "
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/image_1"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto "
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/image_1"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto "
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/image_1"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto "
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/image_1"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto "
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/image_1"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto "
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/image_1"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+
+
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>

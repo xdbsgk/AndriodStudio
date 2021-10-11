@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--  layout_gravity: 부모의 기준에서 center에 오게 하라.  -->
+    <TextView
+        android:layout_gravity="center"
+        android:background="#6520FF"
+        android:layout_width="300dp"
+        android:layout_height="300dp"/>
+
+    <TextView
+        android:layout_gravity="center"
+        android:background="@color/purple_200"
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
+
+    <TextView
+        android:layout_gravity="center"
+        android:background="#DECFFF"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+
+</FrameLayout>
