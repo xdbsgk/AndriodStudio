@@ -1,0 +1,77 @@
+{
+  "status":"ok",
+  "status_message":"Query was successful",
+  "data":{
+    "movie_count":35992,
+    "limit":20,
+    "page_number":1,
+    "movies":[
+      {
+        "id":15553,
+        "url":"https:\/\/yts.mx\/movies\/doctor-who-the-day-of-the-doctor-2013",
+        "imdb_code":"tt2779318",
+        "title":"Doctor Who The Day of the Doctor",
+        "title_english":"Doctor Who The Day of the Doctor",
+        "title_long":"Doctor Who The Day of the Doctor (2013)",
+        "slug":"doctor-who-the-day-of-the-doctor-2013",
+        "year":2013,
+        "rating":9.4,
+        "runtime":77,
+        "genres":[
+          "Action",
+          "Adventure",
+          "Drama",
+          "Family",
+          "Mystery",
+          "Sci-Fi"
+        ],
+        "summary":"In 2013, something terrible is awakening in London's National Gallery; in 1562, a murderous plot is afoot in Elizabethan England; and somewhere in space an ancient battle reaches its devastating conclusion.",
+        "description_full":"In 2013, something terrible is awakening in London's National Gallery; in 1562, a murderous plot is afoot in Elizabethan England; and somewhere in space an ancient battle reaches its devastating conclusion.",
+        "synopsis":"In 2013, something terrible is awakening in London's National Gallery; in 1562, a murderous plot is afoot in Elizabethan England; and somewhere in space an ancient battle reaches its devastating conclusion.",
+        "yt_trailer_code":"Mkq8pnvsnQg",
+        "language":"en",
+        "mpa_rating":"",
+        "background_image":"https:\/\/yts.mx\/assets\/images\/movies\/doctor_who_the_day_of_the_doctor_2013\/background.jpg",
+        "background_image_original":"https:\/\/yts.mx\/assets\/images\/movies\/doctor_who_the_day_of_the_doctor_2013\/background.jpg",
+        "small_cover_image":"https:\/\/yts.mx\/assets\/images\/movies\/doctor_who_the_day_of_the_doctor_2013\/small-cover.jpg",
+        "medium_cover_image":"https:\/\/yts.mx\/assets\/images\/movies\/doctor_who_the_day_of_the_doctor_2013\/medium-cover.jpg",
+        "large_cover_image":"https:\/\/yts.mx\/assets\/images\/movies\/doctor_who_the_day_of_the_doctor_2013\/large-cover.jpg",
+        "state":"ok",
+        "torrents":[
+          {
+            "url":"https:\/\/yts.mx\/torrent\/download\/522D19B70EB06419D339E4B1470640090CA69286",
+            "hash":"522D19B70EB06419D339E4B1470640090CA69286",
+            "quality":"720p",
+            "type":"bluray",
+            "seeds":49,
+            "peers":4,
+            "size":"734.9 MB",
+            "size_bytes":770598502,
+            "date_uploaded":"2020-02-24 05:16:24",
+            "date_uploaded_unix":1582517784
+          },
+          {
+            "url":"https:\/\/yts.mx\/torrent\/download\/682E309437DFAE8BA08F44AD00D236B94FC0CD30",
+            "hash":"682E309437DFAE8BA08F44AD00D236B94FC0CD30",
+            "quality":"1080p",
+            "type":"bluray",
+            "seeds":83,
+            "peers":7,
+            "size":"1.42 GB",
+            "size_bytes":1524713390,
+            "date_uploaded":"2020-02-24 07:15:16",
+            "date_uploaded_unix":1582524916
+          }
+        ],
+        "date_uploaded":"2020-02-24 05:16:24",
+        "date_uploaded_unix":1582517784
+      }
+    ]
+  },
+  "@meta":{
+    "server_time":1634278401,
+    "server_timezone":"CET",
+    "api_version":2,
+    "execution_time":"0.02 ms"
+  }
+}
