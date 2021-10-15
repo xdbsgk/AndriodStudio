@@ -1,0 +1,144 @@
+package ch05;
+
+// Thread끼리 공유 자원에 대한 이해해보기
+// 임계 영역을 만났을 때의 동기화가 필요. --> 
+// synchronized 메서드 --> 메서드 전체에 적용
+// synchronized 블럭 --> 원하는 부분에만 적용
+// 예제] 부부가 하나의 계좌를 사용한다.
+
+class BankAccount {
+	
+	int money = 100_000;
+	
+	// getter, setter 추가
+	public int getMoney() {
+		return money;
+	}
+
+	public void setMoney(int money) {
+		this.money = money;
+	}
+	
+	
+	
+	// account 기능 추가 (입금, 출금)
+	
+	
+	// 입금 (save money)
+	
+	public synchronized void saveMoney(int money) {
+		
+		/*
+		// synchronized 블럭 방법. 
+		synchronized (this) {
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		*/
+		
+		int currentMoney = getMoney();
+		
+		// 입금하는 동안 걸리는 시간 (3초) --> Thread.sleep 이용
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
+		// setMoney 호출하기
+		setMoney(currentMoney + money);
+		System.out.println("입금 후 계좌 잔액: " + getMoney());
+	}
+	
+	// 출금
+	
+	public synchronized void widthdrawMoney(int money) {
+		// 처음 10만원
+		int currentMoney = getMoney();
+		
+		try {
+			Thread.sleep(500);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
+		// 방어적 코드 설계 : 출금 시 잔액이 부족할 경우 대비
+		if(currentMoney < money) {
+			System.out.println("출금할 잔액이 부족합니다.");
+		} else {
+			setMoney(currentMoney - money);
+			System.out.println("출금 후 계좌 잔액: " + getMoney());
+		}
+		
+	}
+	
+	
+	
+}
+// End of Bank
+
+
+
+class Father extends Thread {
+	
+	BankAccount account;
+
+	public Father(BankAccount account) {
+		this.account = account;
+	}
+	
+	@Override
+	public void run() {
+		// 아버지의 입금하는 기능 만들기
+		account.saveMoney(10_000);
+	}
+	
+	
+}
+// End of Father
+
+
+
+class Mother extends Thread {
+	
+	BankAccount account;
+
+	public Mother(BankAccount account) {
+		this.account = account;
+	}
+	
+	@Override
+	public void run() {
+		// 어머니의 출금하는 기능 만들기
+		account.widthdrawMoney(5_000);
+		
+	}
+	
+}
+//End of Mother
+
+
+
+
+public class SharedResource {
+	
+	public static void main(String[] args) {
+		
+		BankAccount account = new BankAccount();
+		Father father = new Father(account);
+		Mother mother = new Mother(account);
+		
+		// 아버지가 입금하는 동작
+		father.start();
+		
+		// 어머니가 출금하는 동작
+		mother.start();
+		
+		// 정상 : 100_000 + 10_000 - 5_000 = 105_000
+		
+		
+	}
+}
